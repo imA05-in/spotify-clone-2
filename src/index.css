@@ -1,1 +1,11 @@
-@import "tailwindcss"
+@import "tailwindcss";
+
+.animation-1{
+    @apply
+     hover:bg-[#535353] transition-all duration-100 ease-in hover:scale-110
+}
+
+.animation-2{
+    @apply
+     hover:bg-[#535353] transition-all duration-200 ease-in-out hover:scale-101 
+}
