@@ -12,3 +12,14 @@
 //     mainMid.appendChild(installContent);
 //   }
 // });
+
+
+const installApp = document.querySelector('.install-app')
+
+
+
+installApp.addEventListener('click', ()=>{
+    const response = null
+    fetch('/install.html').then(response = response.json)
+    .catch(console.log(response.json))
+})
