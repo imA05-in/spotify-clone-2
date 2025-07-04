@@ -14,12 +14,15 @@
 // });
 
 
-const installApp = document.querySelector('.install-app')
+const exploreButton = document.querySelector(".navbar-right-premium")
+// const para = document.querySelector('.para')
+const mainMid = document.querySelector(".main-mid ");
 
+exploreButton.addEventListener("click", async function(){
+    const response =  await fetch('/explore.html')
+    const data = await response.text()
 
+    mainMid.innerHTML = data
 
-installApp.addEventListener('click', ()=>{
-    const response = null
-    fetch('/install.html').then(response = response.json)
-    .catch(console.log(response.json))
+    console.log(data)
 })

@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+.scrollbar-stable {
+  scrollbar-gutter: stable;
+}
+
+
 .animation-1{
     @apply
      hover:bg-[#535353] transition-all duration-100 ease-in hover:scale-110
@@ -17,4 +22,30 @@
     hover:scale-110
     duration-200
     ease-in-out
+}
+
+/* .font-small {
+    @apply
+    font-size: 0px;
+} */
+
+
+.playlist-layout{
+    @apply
+    bg-purple-900 size-50 aspect-square rounded-xl m-2
+}
+
+
+.playlist-liked {
+  background-image: url("/resources/liked-songs-playlist.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.playlist-saved{
+  background-image: url("/resources/saved-songs-playlist.png") ;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
